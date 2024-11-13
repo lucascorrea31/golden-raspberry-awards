@@ -49,4 +49,5 @@ Acesse a rota `/awards/producers/intervals` para obter os produtores com os meno
 #### Acessando a API
 
 Após executar o projeto (em modo DEV ou não), acesse o link abaixo em seu navegador:
-API: `http://localhost:3000/awards/producers/intervals`
+
+[http://localhost:3000/awards/producers/intervals](http://localhost:3000/awards/producers/intervals)
