@@ -25,7 +25,10 @@ function findMinMaxIntervals(callback) {
 		const producers = {};
 
 		movies.forEach((movie) => {
-			const producerNames = movie.producers.split(",").map((p) => p.trim());
+			const producerNames = movie.producers
+				.split(/, | and /)
+				.map((p) => p.trim());
+
 			producerNames.forEach((name) => {
 				if (!producers[name]) producers[name] = { name, wins: [] };
 				producers[name].wins.push(parseInt(movie.year, 10));
