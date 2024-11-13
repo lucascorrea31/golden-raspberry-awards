@@ -2,22 +2,51 @@
 
 Teste técnico para o processo de seleção da Outsera.
 
-## Como Executar
+## Requisitos
 
-1. Instale as dependências:
+- Node v20+
+- NPM v10+
+
+## Instalando e configurando
+
+1. Clone o repositório
+```bash
+❯ git clone git@github.com:lucascorrea31/golden-raspberry-awards.git
+```
+
+2. Entre na pasta do projeto criada
+```bash
+❯ cd golden-raspberry-awards/
+```
+
+3. Instale as dependências:
 ```bash
 npm install
 ```
 
-2. Execute o projeto:
+
+## Executando
+
+- Para executar o projeto:
 ```bash
 npm start
 ```
 
-3. Teste a API com:
+- Para executar o projeto em modo DEV:
+```bash
+npm run dev
+```
+
+- Para rodar o teste de integração:
 ```bash
 npm test
 ```
 
 Esse código configura a API RESTful conforme os requisitos especificados.
 Acesse a rota `/awards/producers/intervals` para obter os produtores com os menores e maiores intervalos de prêmios.
+
+
+#### Acessando a API
+
+Após executar o projeto (em modo DEV ou não), acesse o link abaixo em seu navegador:
+API: `http://localhost:3000/awards/producers/intervals`
