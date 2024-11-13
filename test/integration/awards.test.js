@@ -36,6 +36,8 @@ describe("GET /awards/producers/intervals", () => {
 		expect(response.body.min[0].interval).toEqual(1);
 	});
 
+	// Este teste depende exclusivamente da massa de dados disponibilizada.
+	// Ao alterar os dados, estes testes tendem a falhar.
 	it("should return a producer with a max interval equals 13", async () => {
 		const response = await request(app).get("/awards/producers/intervals");
 		expect(response.statusCode).toBe(200);
